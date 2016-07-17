@@ -1,8 +1,19 @@
 {
-  "name": "portfolio",
+  "name": "mobilefirst",
   "version": "0.0.1",
-  "description": "portfolio",
+  "description": "mobilefirst",
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-htmlmin": "^0.1.4",
+    "grunt-rev": "^0.1.0",
+    "grunt-usemin": "^3.1.1"
+  }
 }

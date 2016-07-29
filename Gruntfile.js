@@ -36,6 +36,14 @@ module.exports = function(grunt) {
 		}
 	};
 
+	config['imagemin'] = {
+		dist: {
+			files: {
+				'dist/img/LogoWhite.png' : 'src/img/LogoWhite.png',
+			}
+		}
+	};
+
 	config['useminPrepare'] = {
 		options: {
 			dest: 'dist'
@@ -77,7 +85,7 @@ module.exports = function(grunt) {
 			},
 		},
 		scripts: {
-			files: ['**/*.css', '**/*.html', '**/*.scss'],
+			files: ['**/*.{css,html,scss}'],
 			tasks: ['build'],
 			options: {
 				spawn: false,
@@ -99,6 +107,7 @@ module.exports = function(grunt) {
 		'clean',
 		'useminPrepare',
 		'htmlmin',
+		'imagemin',
 		'rev',
 		'usemin',
 		'sass',
